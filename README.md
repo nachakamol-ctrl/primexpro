@@ -1,14 +1,21 @@
-# PRIMEX PRO Website v1.0
+# PRIMEX PRO Website v2.0
 
-พร้อมสำหรับ GitHub Pages
+อัปเกรดจาก v1.0 เป็นแนว Premium Business Creative Partner
 
-## อัปโหลดไฟล์เหล่านี้ไปที่ root ของ repository `primexpro`
-- index.html
-- style.css
-- script.js
+## วิธีอัปเดตบน GitHub
+1. เข้า repository `primexpro`
+2. Replace ไฟล์เดิม:
+   - index.html
+   - style.css
+   - script.js
+3. Commit changes
+4. GitHub Pages จะ deploy อัตโนมัติ
 
-## จากนั้น
-Settings > Pages > Build and deployment > Deploy from a branch > main > /(root) > Save
+## ก่อนใช้งานจริง
+แก้ค่าใน index.html:
+- LINE URL
+- Email
+- Social links
+- Portfolio links
 
-## ก่อนเปิดใช้จริง
-แก้ LINE URL และ email ใน `index.html` ให้เป็นข้อมูลจริงของ PRIMEX PRO
+URL เดิมจะไม่เปลี่ยน
