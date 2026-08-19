@@ -16,5 +16,4 @@ Upload/replace these files in repository `primexpro`:
 - script.js
 - README.md
 
-Also upload:
-- assets/primexpro-logo.jpg
+
