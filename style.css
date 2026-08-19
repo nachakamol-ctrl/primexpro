@@ -1,104 +1,12 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#071426;color:#f7f5ef;font-family:Kanit,sans-serif;font-weight:300;line-height:1.65}a{color:inherit}.wrap{width:min(1180px,88%);margin:auto}header{height:82px;padding:0 5.5%;display:flex;align-items:center;gap:28px;position:fixed;top:0;width:100%;z-index:20;background:rgba(7,20,38,.88);backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 18px Montserrat}.brand img{width:40px;height:40px;object-fit:cover;border-radius:6px}.brand b,.eyebrow,.rows b,.cards small{color:#c9a45b}nav{display:flex;gap:24px;margin-left:auto}nav a,.topcta{text-decoration:none;font:600 10px Montserrat;letter-spacing:1.2px;color:#cbd3dd}.topcta{border:1px solid #c9a45b88;padding:9px 14px;color:#e6ca8a}.menu{display:none;margin-left:auto;background:none;border:0;color:white;font-size:24px}.hero{min-height:100vh;display:grid;align-items:center;padding-top:82px;background:radial-gradient(circle at 78% 32%,#c9a45b20,transparent 34%),linear-gradient(135deg,#071426,#0a1727)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}.eyebrow{font:600 10px Montserrat;letter-spacing:3px}.hero h1,.contact h2{font:700 clamp(46px,5.8vw,82px) Montserrat;line-height:1.04;margin:20px 0}.hero h1 em,.contact h2 em{font-style:normal;color:#e6ca8a}.lead{color:#aeb7c3;font-size:18px}.buttons{display:flex;gap:12px;margin:30px 0}.btn{padding:12px 22px;text-decoration:none;border:1px solid #ffffff36}.gold{background:#c9a45b;color:#071426;border-color:#c9a45b}.meta{font:500 9px Montserrat;letter-spacing:1.5px;color:#6f7c8b}.sig{min-height:500px;border:1px solid #c9a45b44;padding:26px;display:flex;flex-direction:column;justify-content:space-between}.sig>span,.sig small{font:600 9px Montserrat;letter-spacing:1.5px;color:#8190a2}.sig img{width:88%;max-width:410px;aspect-ratio:1/1;object-fit:cover;margin:auto;border-radius:50%;box-shadow:0 25px 70px #0005}.light{background:#f2eee4;color:#18202a;padding:110px 0}.two{display:grid;grid-template-columns:1fr 1.2fr;gap:70px}.light h2,#services h2,.panel h2,#work h2{font:700 clamp(34px,4.5vw,58px) Montserrat;line-height:1.12}.light h2 em{font-style:normal;color:#927341}.dark{color:#927341}.darkcopy{font-size:18px;color:#56616c}.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}.mini article{border-top:1px solid #cfc7b6;padding-top:15px}.mini b{font:700 12px Montserrat}.mini p{font-size:13px;color:#66717b}#services,.panel,#work{padding:110px 0}.rows{margin-top:40px;border-top:1px solid #ffffff16}.rows article{display:grid;grid-template-columns:60px 1fr auto;gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid #ffffff16}.rows span{color:#c9a45b;font:600 10px Montserrat}.rows h3{font:700 24px Montserrat;margin:0}.rows p{margin:5px 0 0;color:#aeb7c3}.rows b{font:600 9px Montserrat}.panel{background:#0a192b}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.cards article{border:1px solid #ffffff18;padding:30px;min-height:430px;position:relative}.cards .featured{border-color:#c9a45b;background:#c9a45b0d}.cards label{position:absolute;top:0;right:0;background:#c9a45b;color:#111;padding:6px 10px;font:600 8px Montserrat}.cards h3{font:700 24px Montserrat}.cards p{color:#aeb7c3}.cards ul{list-style:none;padding:10px 0}.cards li{padding:6px 0;border-bottom:1px solid #ffffff12}.cards li:before{content:"✦";color:#c9a45b;margin-right:9px}.cards a{position:absolute;bottom:26px;color:#e6ca8a;text-decoration:none}.case{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:40px;align-items:center}.rf{min-height:390px;border:1px solid #87977a66;display:grid;place-items:center;text-align:center;color:#b5c2aa;font:700 70px Montserrat;background:radial-gradient(circle,#87977a1f,transparent 40%)}.rf span{font-size:24px}.case small{font:600 9px Montserrat;color:#87977a}.case h3{font:700 42px Montserrat}.case p{color:#aeb7c3;font-size:17px}.case a{color:#e6ca8a;text-decoration:none}.light details{border-bottom:1px solid #cec5b3;padding:18px 0}.light summary{cursor:pointer;font-weight:500;font-size:18px}.light details p{color:#626d78}.contact{text-align:center;padding:130px 0}.contact>div>p{color:#aeb7c3;font-size:18px}.center{justify-content:center}.social{display:flex;justify-content:center;gap:18px}.social a{font:600 9px Montserrat;color:#e6ca8a;text-decoration:none}.foot{padding:35px 0;display:flex;justify-content:space-between;align-items:center;color:#778595;font-size:10px;border-top:1px solid #ffffff12}
-@media(max-width:900px){nav,.topcta{display:none}nav.open{display:flex;position:absolute;top:82px;left:0;width:100%;padding:25px;background:#071426;flex-direction:column}.menu{display:block}.hero-grid,.two,.case{grid-template-columns:1fr}.sig{min-height:auto}.mini,.cards{grid-template-columns:1fr}.rows article{grid-template-columns:45px 1fr}.rows b{display:none}.foot{display:block;text-align:center}.foot .brand{justify-content:center;margin-bottom:15px}}
-/* =========================
-   SERVICES — PRIMEX PRO
-========================= */
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#02060b;color:#f5f2eb;font-family:Kanit,sans-serif;font-weight:300;line-height:1.65}a{color:inherit}.wrap{width:min(1380px,88%);margin:auto}.topbar{height:82px;padding:0 4.5%;display:flex;align-items:center;gap:30px;position:fixed;top:0;width:100%;z-index:50;background:rgba(0,3,7,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(199,145,54,.32)}.brand img{width:190px;max-height:64px;object-fit:contain;object-position:left center}.menu{display:none;margin-left:auto;background:none;border:0;color:#fff;font-size:24px}.topbar nav{display:flex;gap:34px;margin-left:auto}.topbar nav a,.start-project{text-decoration:none;font:600 11px Montserrat;letter-spacing:.04em}.start-project{border:1px solid rgba(205,151,60,.55);padding:13px 22px;color:#e2b35e}.hero{position:relative;min-height:610px;padding-top:82px;display:flex;align-items:center;background:#03070d url('assets/navy-gradient.jpg') center/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,4,8,.97) 0%,rgba(2,7,14,.80) 47%,rgba(0,0,0,.60) 100%)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center;position:relative;z-index:2;padding:72px 0 58px}.eyebrow{font:600 11px Montserrat;letter-spacing:3px;color:#c78f35}.hero h1{font:600 clamp(42px,4.2vw,68px) Kanit;line-height:1.05;margin:16px 0 22px;max-width:680px}.hero h1 span,.contact h2 span,.showcase h2 span,.about h2 span{color:#d6a54c}.lead{font-size:18px;max-width:650px;color:#d7d7d7}.hero-actions{display:flex;gap:14px;margin:28px 0}.btn{display:inline-block;padding:13px 28px;text-decoration:none;border:1px solid rgba(213,160,72,.55);font-weight:500}.primary{background:linear-gradient(135deg,#d7a850,#b67b27);color:#090909}.secondary{color:#fff;background:rgba(0,0,0,.15)}.hero-meta{display:flex;gap:10px;flex-wrap:wrap;color:#8c8f94;font:500 10px Montserrat;letter-spacing:1.4px}.hero-meta i{color:#c78f35;font-style:normal}.hero-brand{display:flex;justify-content:center;align-items:center}.hero-brand img{width:min(370px,58%);height:auto;filter:drop-shadow(0 20px 35px rgba(210,151,44,.14))}
 
-.services-section {
-  padding: 110px 8%;
-  background:
-    radial-gradient(circle at 85% 20%, rgba(202,160,78,.08), transparent 30%),
-    #071526;
-}
+.about{padding:88px 0;background:linear-gradient(180deg,#030911,#02060b);border-top:1px solid rgba(199,145,54,.22)}.about-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:58px;align-items:center}.about-media{position:relative;min-height:420px;overflow:hidden;border:1px solid rgba(199,145,54,.25)}.about-media img{width:100%;height:100%;min-height:420px;object-fit:cover;display:block}.media-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,4,8,.05),rgba(1,4,8,.25))}.media-caption{position:absolute;left:24px;bottom:20px;font:600 10px Montserrat;letter-spacing:1.8px;color:#e0ae54}.about-copy h2,.showcase h2{font:600 clamp(34px,4vw,54px) Kanit;line-height:1.08;margin:14px 0 22px}.about-copy>p{font-size:17px;color:#c7cbd0}.about-points{margin-top:28px;border-top:1px solid rgba(199,145,54,.2)}.about-points div{display:grid;grid-template-columns:48px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid rgba(199,145,54,.15)}.about-points b{font:600 10px Montserrat;color:#d3a14a}.about-points span{color:#e0e2e5}
 
-.section-heading {
-  margin-bottom: 55px;
-}
+.services,.packages,.work,.faq{padding:72px 0;border-top:1px solid rgba(199,145,54,.28);background:linear-gradient(180deg,#02060b,#030911)}.section-head{margin-bottom:34px}.section-head h2{margin:4px 0;font:700 clamp(34px,3.7vw,52px) Montserrat;color:#c78f35}.section-head>p:last-child{margin-top:2px;color:#d8d8d8}.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.service-card{min-height:300px;border:1px solid rgba(199,145,54,.35);padding:24px;background:linear-gradient(180deg,rgba(255,255,255,.018),rgba(255,255,255,.004));transition:.25s}.service-card:hover{transform:translateY(-5px);border-color:#d7a64d}.card-top{display:flex;align-items:center;justify-content:space-between}.service-no{font:500 28px Montserrat;color:#c78f35}.service-icon{font-size:30px;color:#e0aa48}.service-card h3{font:600 15px Montserrat;margin:36px 0 12px}.service-card p{font-size:14px;color:#c1c4c8}
 
-.section-heading .eyebrow {
-  color: #d4aa55;
-  letter-spacing: .25em;
-  font-size: 12px;
-  font-weight: 700;
-}
+.showcase{padding:88px 0;background:radial-gradient(circle at 75% 40%,rgba(199,145,54,.09),transparent 28%),#02050a;border-top:1px solid rgba(199,145,54,.28)}.showcase-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:58px;align-items:center}.showcase-copy p{font-size:17px;color:#c7cbd0}.showcase-tags{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}.showcase-tags span{padding:6px 10px;border:1px solid rgba(199,145,54,.27);font:500 10px Montserrat;color:#d4a34d}.text-link{color:#e0ac50;text-decoration:none}.showcase-media{overflow:hidden;border:1px solid rgba(199,145,54,.28)}.showcase-media img{width:100%;display:block;transition:transform .5s ease}.showcase-media:hover img{transform:scale(1.025)}
 
-.section-heading h2 {
-  margin: 10px 0 0;
-  color: #d4aa55;
-  font-size: clamp(38px, 5vw, 70px);
-  line-height: 1;
-}
+.packages{background:#02050a}.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.package-grid article{position:relative;min-height:390px;padding:30px;border:1px solid rgba(199,145,54,.32)}.package-grid .featured{border-color:#d0a047;background:rgba(208,160,71,.04)}.package-grid label{position:absolute;top:0;right:0;background:#cda047;color:#101010;padding:5px 12px;font:600 9px Montserrat}.package-grid small{color:#c78f35;font:600 11px Montserrat}.package-grid h3{font:600 24px Montserrat}.package-grid ul{padding-left:20px;color:#d0d3d6}.package-grid a,.case-study a{position:absolute;bottom:26px;color:#e0ac50;text-decoration:none}.work{background:#030911}.case-study{display:grid;grid-template-columns:280px 1fr;gap:50px;align-items:center;border:1px solid rgba(135,151,122,.32);padding:36px;position:relative}.case-mark{height:250px;display:grid;place-items:center;border:1px solid rgba(135,151,122,.45);font:700 72px Montserrat;color:#9aaa91;background:radial-gradient(circle,rgba(135,151,122,.12),transparent 55%)}.case-study small{color:#87977a;font:600 10px Montserrat}.case-study h3{font:700 38px Montserrat}.case-study p{color:#c6cad0;max-width:780px}.faq details{border-bottom:1px solid rgba(199,145,54,.22);padding:18px 0}.faq summary{cursor:pointer;font-size:18px}.faq details p{color:#b9bec5}.contact{text-align:center;padding:100px 0;background:radial-gradient(circle at 50% 70%,rgba(203,148,55,.13),transparent 30%),#010306}.contact h2{font:700 clamp(42px,6vw,74px) Montserrat;line-height:1.03;margin:16px 0}.contact>div>p{color:#c4c6ca;font-size:18px;max-width:700px;margin:auto}.center{justify-content:center}.social{display:flex;justify-content:center;gap:24px;margin-top:24px}.social a{font:600 10px Montserrat;color:#d3a049;text-decoration:none}.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:30px 0;border-top:1px solid rgba(199,145,54,.22);font-size:10px;color:#73777f}.footer-inner img{width:120px}
 
-.section-heading p {
-  margin-top: 10px;
-  color: #d8dee8;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
-}
-
-.service-card {
-  position: relative;
-  min-height: 310px;
-  padding: 35px 26px;
-  border: 1px solid rgba(212,170,85,.25);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255,255,255,.035),
-      rgba(255,255,255,.012)
-    );
-  transition: transform .3s ease, border-color .3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  border-color: #d4aa55;
-}
-
-.service-no {
-  margin-bottom: 55px;
-  color: #d4aa55;
-  font-size: 13px;
-  letter-spacing: .18em;
-}
-
-.service-card h3 {
-  margin-bottom: 18px;
-  color: #f5f1e8;
-  font-size: 18px;
-  letter-spacing: .04em;
-}
-
-.service-card p {
-  color: #aeb9c8;
-  line-height: 1.8;
-  font-size: 14px;
-}
-
-@media (max-width: 1100px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 650px) {
-  .services-section {
-    padding: 75px 22px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    min-height: auto;
-  }
-
-  .service-no {
-    margin-bottom: 30px;
-  }
-}
+@media(max-width:1050px){.topbar nav,.start-project{display:none}.menu{display:block}.topbar nav.open{display:flex;position:absolute;top:82px;left:0;width:100%;background:#02060b;padding:25px;flex-direction:column}.hero-grid,.about-grid,.showcase-grid{grid-template-columns:1fr}.hero-brand img{width:220px}.service-grid{grid-template-columns:repeat(2,1fr)}.package-grid{grid-template-columns:1fr}.case-study{grid-template-columns:1fr}.case-mark{height:180px}.package-grid a,.case-study a{position:static;display:inline-block;margin-top:20px}.footer-inner{flex-direction:column;gap:12px}.brand img{width:150px}.about-media{order:2}.about-copy{order:1}}
+@media(max-width:620px){.hero{min-height:auto}.hero-grid{padding:60px 0}.hero h1{font-size:42px}.lead{font-size:16px}.hero-actions{flex-direction:column}.btn{text-align:center}.hero-brand{margin-top:10px}.hero-brand img{width:180px}.service-grid{grid-template-columns:1fr}.topbar{padding:0 20px}.brand img{width:125px}.services,.packages,.work,.faq,.about,.showcase{padding:58px 0}.about-media,.about-media img{min-height:300px}}
