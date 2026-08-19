@@ -1,21 +1,20 @@
-# PRIMEX PRO Website v2.0
+# PRIMEX PRO Website v3.0 — Real Brand Edition
 
-อัปเกรดจาก v1.0 เป็นแนว Premium Business Creative Partner
+Included:
+- Real PRIMEX PRO logo
+- LINE: https://lin.ee/Rid7K2g
+- Facebook: https://www.facebook.com/profile.php?id=61592345856124
+- TikTok: @primexprothailand
+- Email: primxprothailand@gmail.com
+- ROOTERRA FARM case study
+- Responsive layout
+- GitHub Pages ready
 
-## วิธีอัปเดตบน GitHub
-1. เข้า repository `primexpro`
-2. Replace ไฟล์เดิม:
-   - index.html
-   - style.css
-   - script.js
-3. Commit changes
-4. GitHub Pages จะ deploy อัตโนมัติ
+Upload/replace these files in repository `primexpro`:
+- index.html
+- style.css
+- script.js
+- README.md
 
-## ก่อนใช้งานจริง
-แก้ค่าใน index.html:
-- LINE URL
-- Email
-- Social links
-- Portfolio links
-
-URL เดิมจะไม่เปลี่ยน
+Also upload:
+- assets/primexpro-logo.jpg
