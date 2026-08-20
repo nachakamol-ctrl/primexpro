@@ -1,3 +1,951 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMEX PRO - Business Creative Solution</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Strict Styling & Design System Rules */
+        :root {
+            --bg-dark: #0B0E14;
+            --card-bg: #121721;
+            --gold-accent: #C5A25D;
+            --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+            --text-main: #FFFFFF;
+            --text-muted: #A0AEC0;
+            --border-color: rgba(197, 162, 93, 0.3);
+            --font-primary: 'Prompt', 'Kanit', sans-serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .text-muted {
+            color: var(--text-muted);
+        }
+
+        .text-gold {
+            color: var(--gold-accent);
+        }
+
+        .gradient-text {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            font-family: var(--font-primary);
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: none;
+        }
+
+        .btn-gold-outline {
+            border: 1px solid var(--gold-accent);
+            color: var(--gold-accent);
+            background: transparent;
+        }
+
+        .btn-gold-outline:hover {
+            background: var(--gold-accent);
+            color: #000;
+        }
+
+        .btn-gold-solid {
+            background: var(--gold-gradient);
+            color: #000;
+            font-weight: 700;
+        }
+
+        .btn-gold-solid:hover {
+            opacity: 0.9;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-green {
+            background-color: #2E7D32;
+            color: #FFF;
+        }
+
+        .btn-green:hover {
+            background-color: #1B5E20;
+        }
+
+        .btn-blue {
+            background-color: #1565C0;
+            color: #FFF;
+        }
+
+        .btn-blue:hover {
+            background-color: #0D47A1;
+        }
+
+        .btn-full {
+            width: 100%;
+        }
+
+        /* Header / Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(11, 14, 20, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 16px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span.badge {
+            font-size: 10px;
+            background: var(--gold-accent);
+            color: #000;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--gold-accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0 40px 0;
+            position: relative;
+        }
+
+        .hero-grid {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content {
+            flex: 1.2;
+        }
+
+        .hero-image {
+            flex: 0.8;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        /* 7-Step Process Flow */
+        .process-flow {
+            margin-top: 30px;
+            padding: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        .process-title {
+            font-size: 12px;
+            color: var(--gold-accent);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .process-steps {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-width: 70px;
+        }
+
+        .step-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 4px;
+            background: rgba(197, 162, 93, 0.1);
+            border: 1px solid var(--gold-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-accent);
+            font-weight: 700;
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+
+        .step-label {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .step-arrow {
+            color: var(--gold-accent);
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .section-header {
+            margin-bottom: 36px;
+        }
+
+        /* Section 1: OUR WORK */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .portfolio-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-color);
+        }
+
+        .comparison-container {
+            height: 240px;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .comp-side {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comp-side img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .comp-before img {
+            filter: grayscale(100%) brightness(0.7);
+        }
+
+        .comp-tag {
+            position: absolute;
+            top: 8px;
+            padding: 2px 8px;
+            font-size: 10px;
+            font-weight: 700;
+            border-radius: 4px;
+            z-index: 2;
+        }
+
+        .tag-before {
+            left: 8px;
+            background: rgba(0,0,0,0.7);
+            color: var(--text-muted);
+        }
+
+        .tag-after {
+            right: 8px;
+            background: var(--gold-accent);
+            color: #000;
+        }
+
+        .card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-category {
+            font-size: 11px;
+            color: var(--gold-accent);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .card-body h3 {
+            margin-bottom: 12px;
+        }
+
+        .feature-list {
+            margin-top: auto;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .feature-badge {
+            font-size: 11px;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        /* Section 2: BLUEPRINT & FREE REVIEW */
+        .blueprint-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .blueprint-block {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+        }
+
+        .review-block {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            border: 2px solid var(--gold-accent);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .blueprint-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .blueprint-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .blueprint-num {
+            color: var(--gold-accent);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1;
+            background: rgba(197, 162, 93, 0.1);
+            padding: 6px;
+            border-radius: 4px;
+        }
+
+        .review-points {
+            margin: 20px 0;
+        }
+
+        .review-point {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgba(197, 162, 93, 0.2);
+            color: var(--gold-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        /* Section 3: PACKAGES & PRICING */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 24px 20px;
+            min-height: 480px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--border-color);
+        }
+
+        .pricing-card.popular {
+            border: 1px solid var(--gold-accent);
+            box-shadow: 0 0 20px rgba(197, 162, 93, 0.15);
+        }
+
+        .pricing-number {
+            font-size: 12px;
+            color: var(--gold-accent);
+            font-weight: 700;
+        }
+
+        .pricing-header h3 {
+            font-size: 20px;
+            margin: 4px 0 12px 0;
+        }
+
+        .price-box {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .price-amount {
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFF;
+        }
+
+        .price-period {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .pricing-features {
+            flex: 1;
+            margin-bottom: 24px;
+        }
+
+        .pricing-features li {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .pricing-features li::before {
+            content: "•";
+            color: var(--gold-accent);
+        }
+
+        /* Section 4: CUSTOM PROJECT & FOOTER BANNER */
+        .custom-project-banner {
+            background: linear-gradient(180deg, var(--card-bg) 0%, rgba(18, 23, 33, 0.6) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .bottom-cta-bar {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bottom-cta-text h2 {
+            margin-bottom: 4px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .portfolio-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+            .blueprint-grid { grid-template-columns: 1fr; }
+            .hero-grid { flex-direction: column; }
+            .nav-links { display: none; }
+        }
+
+        @media (max-width: 576px) {
+            .pricing-grid { grid-template-columns: 1fr; }
+            .custom-project-banner, .bottom-cta-bar { flex-direction: column; text-align: center; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo gradient-text">
+                PRIMEX PRO <span class="badge">SOLUTION</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">SYSTEM</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">PACKAGES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+            <a href="#" class="btn btn-gold-outline">START A PROJECT</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 class="gradient-text">FROM PRODUCT TO MARKET IMPACT</h1>
+                <p class="subtitle">จากสินค้า สู่แบรนด์ที่สร้างคุณค่า และยอดขายอย่างยั่งยืนด้วยโซลูชันสร้างสรรค์ครบวงจร</p>
+                
+                <!-- 7-Step Process Flow Chart -->
+                <div class="process-flow">
+                    <div class="process-title">7-STEP PRODUCT TO MARKET SYSTEM</div>
+                    <div class="process-steps">
+                        <div class="step-item">
+                            <div class="step-icon">01</div>
+                            <div class="step-label">PRODUCT</div>
+                        </div>
+                        <div class="step-arrow">&rarr;</div>
+                        <div class="step-item">
+                            <div class="step-icon">02</div>
+                            <div class="step-label">CUSTOMER</div>
+                        </div>
+                        <div class="step-arrow">&rarr;</div>
+                        <div class="step-item">
+                            <div class="step-icon">03</div>
+                            <div class="step-label">POSITIONING</div>
+                        </div>
+                        <div class="step-arrow">&rarr;</div>
+                        <div class="step-item">
+                            <div class="step-icon">04</div>
+                            <div class="step-label">BRAND</div>
+                        </div>
+                        <div class="step-arrow">&rarr;</div>
+                        <div class="step-item">
+                            <div class="step-icon">05</div>
+                            <div class="step-label">PACKAGING</div>
+                        </div>
+                        <div class="step-arrow">&rarr;</div>
+                        <div class="step-item">
+                            <div class="step-icon">06</div>
+                            <div class="step-label">SALES CHANNEL</div>
+                        </div>
+                        <div class="step-arrow">&rarr;</div>
+                        <div class="step-item">
+                            <div class="step-icon">07</div>
+                            <div class="step-label">MARKET</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Dark luxury product packaging mockup">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: OUR WORK / PRODUCT TO MARKET -->
+    <section id="work">
+        <div class="container">
+            <div class="section-header">
+                <p class="card-category">CASE STUDIES</p>
+                <h2>OUR WORK / PRODUCT TO MARKET</h2>
+                <p class="text-muted">ผลงานการเปลี่ยนสินค้าธรรมดา ให้เป็นแบรนด์พรีเมียมที่สร้างยอดขายได้จริง</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Card 01 -->
+                <div class="portfolio-card">
+                    <div class="comparison-container">
+                        <div class="comp-side comp-before">
+                            <span class="comp-tag tag-before">BEFORE</span>
+                            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80" alt="Basic Packaging">
+                        </div>
+                        <div class="comp-side comp-after">
+                            <span class="comp-tag tag-after">AFTER</span>
+                            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=400&q=80" alt="Branded Premium Product">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Case Study 01</div>
+                        <h3>Agriculture / Food</h3>
+                        <p class="text-muted" style="font-size: 12px; margin-bottom: 12px;">ยกระดับสินค้าเกษตรแปรรูปสู่บรรจุภัณฑ์เกรดส่งออก สร้างมูลค่าเพิ่ม 300%</p>
+                        <div class="feature-list">
+                            <span class="feature-badge">Brand Identity</span>
+                            <span class="feature-badge">Packaging Design</span>
+                            <span class="feature-badge">Positioning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="portfolio-card">
+                    <div class="comparison-container">
+                        <div class="comp-side comp-before">
+                            <span class="comp-tag tag-before">BEFORE</span>
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80" alt="Basic Coffee">
+                        </div>
+                        <div class="comp-side comp-after">
+                            <span class="comp-tag tag-after">AFTER</span>
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=400&q=80" alt="Premium Cafe Product">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Case Study 02</div>
+                        <h3>Food / Café</h3>
+                        <p class="text-muted" style="font-size: 12px; margin-bottom: 12px;">ปรับโฉมแบรนด์กาแฟคราฟต์พร้อมดื่ม เพิ่มโอกาสขยายช่องทางขายเข้าสู่ Retail</p>
+                        <div class="feature-list">
+                            <span class="feature-badge">Market Analysis</span>
+                            <span class="feature-badge">Label Design</span>
+                            <span class="feature-badge">Retail Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="portfolio-card">
+                    <div class="comparison-container">
+                        <div class="comp-side comp-before">
+                            <span class="comp-tag tag-before">BEFORE</span>
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=400&q=80" alt="Standard Gift">
+                        </div>
+                        <div class="comp-side comp-after">
+                            <span class="comp-tag tag-after">AFTER</span>
+                            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=400&q=80" alt="Luxury Lifestyle Gift">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category">Case Study 03</div>
+                        <h3>Premium Gift & Lifestyle</h3>
+                        <p class="text-muted" style="font-size: 12px; margin-bottom: 12px;">รีแบรนดิ้งชุดของขวัญระดับพรีเมียม ตอบโจทย์ลูกค้าองค์กร B2B</p>
+                        <div class="feature-list">
+                            <span class="feature-badge">Box Structure</span>
+                            <span class="feature-badge">Corporate Gift</span>
+                            <span class="feature-badge">Storytelling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: BLUEPRINT & FREE REVIEW -->
+    <section>
+        <div class="container">
+            <div class="blueprint-grid">
+                <!-- Left Block -->
+                <div class="blueprint-block">
+                    <h2>PRIMEX PROJECT BLUEPRINT™</h2>
+                    <p class="text-muted">โครงสร้างการทำงาน 6 ขั้นตอนเพื่อเปลี่ยนไอเดียให้กลายเป็นธุรกิจที่เติบโตอย่างมั่นคง</p>
+                    <div class="blueprint-list">
+                        <div class="blueprint-item">
+                            <div class="blueprint-num">01</div>
+                            <div>
+                                <strong>Research & Data</strong>
+                                <p class="text-muted" style="font-size: 11px;">วิเคราะห์ตลาดและคู่แข่ง</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-item">
+                            <div class="blueprint-num">02</div>
+                            <div>
+                                <strong>Strategy & Map</strong>
+                                <p class="text-muted" style="font-size: 11px;">วางกลยุทธ์แบรนด์</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-item">
+                            <div class="blueprint-num">03</div>
+                            <div>
+                                <strong>Visual Identity</strong>
+                                <p class="text-muted" style="font-size: 11px;">ออกแบบอัตลักษณ์แบรนด์</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-item">
+                            <div class="blueprint-num">04</div>
+                            <div>
+                                <strong>Packaging Work</strong>
+                                <p class="text-muted" style="font-size: 11px;">พัฒนาบรรจุภัณฑ์</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-item">
+                            <div class="blueprint-num">05</div>
+                            <div>
+                                <strong>Channel Setup</strong>
+                                <p class="text-muted" style="font-size: 11px;">เตรียมช่องทางการขาย</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-item">
+                            <div class="blueprint-num">06</div>
+                            <div>
+                                <strong>Market Launch</strong>
+                                <p class="text-muted" style="font-size: 11px;">เปิดตัวสู่ตลาดจริง</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Block -->
+                <div class="review-block">
+                    <div>
+                        <span class="card-category">EXCLUSIVE OFFER</span>
+                        <h2>FREE INITIAL PROJECT REVIEW</h2>
+                        <p class="text-muted">รับการประเมินศักยภาพสินค้าและโอกาสทางการตลาดฟรี โดยทีมผู้เชี่ยวชาญ</p>
+                        
+                        <div class="review-points">
+                            <div class="review-point">
+                                <div class="check-icon">&#10003;</div>
+                                <div>วิเคราะห์จุดแข็ง-จุดอ่อนของสินค้าในปัจจุบัน</div>
+                            </div>
+                            <div class="review-point">
+                                <div class="check-icon">&#10003;</div>
+                                <div>แนะนำแนวทางยกระดับแบรนด์และบรรจุภัณฑ์</div>
+                            </div>
+                            <div class="review-point">
+                                <div class="check-icon">&#10003;</div>
+                                <div>ประเมินโอกาสทางการขายในช่องทางพรีเมียม</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-gold-solid btn-full" style="padding: 14px;">ขอรับฟรีประเมินธุรกิจ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: PACKAGES & PRICING -->
+    <section id="packages">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <p class="card-category">SERVICE PACKAGES</p>
+                <h2>PACKAGES & PRICING</h2>
+                <p class="text-muted">แพ็กเกจการบริการที่ออกแบบมาให้เหมาะกับทุกช่วงการเติบโตของธุรกิจคุณ</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Package 01 -->
+                <div class="pricing-card">
+                    <div class="pricing-number">01</div>
+                    <div class="pricing-header">
+                        <h3>START</h3>
+                        <p class="text-muted" style="font-size: 12px;">สำหรับเริ่มต้นสร้างแบรนด์</p>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-amount">4,900 <span style="font-size: 14px;">THB</span></div>
+                        <div class="price-period">ชำระครั้งเดียว</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Brand Logo Design</li>
+                        <li>Basic Color Palette</li>
+                        <li>Packaging Label Concept</li>
+                        <li>Final Files (AI, PDF, PNG)</li>
+                    </ul>
+                    <button class="btn btn-green btn-full">เลือกแพ็กเกจนี้</button>
+                </div>
+
+                <!-- Package 02 -->
+                <div class="pricing-card popular">
+                    <div class="pricing-number">02</div>
+                    <div class="pricing-header">
+                        <h3 class="text-gold">BUILD</h3>
+                        <p class="text-muted" style="font-size: 12px;">สร้างระบบแบรนด์แบบครบวงจร</p>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-amount text-gold">14,900 <span style="font-size: 14px;">THB</span></div>
+                        <div class="price-period">ชำระครั้งเดียว</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Full Brand Identity System</li>
+                        <li>Complete Packaging Design</li>
+                        <li>3D Product Rendering</li>
+                        <li>Brand Guideline Book</li>
+                        <li>Social Media Template Set</li>
+                    </ul>
+                    <button class="btn btn-gold-solid btn-full">เลือกแพ็กเกจนี้</button>
+                </div>
+
+                <!-- Package 03 -->
+                <div class="pricing-card">
+                    <div class="pricing-number">03</div>
+                    <div class="pricing-header">
+                        <h3>LAUNCH</h3>
+                        <p class="text-muted" style="font-size: 12px;">พร้อมลุยตลาดและขายจริง</p>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-amount">29,900 <span style="font-size: 14px;">THB</span></div>
+                        <div class="price-period">ชำระครั้งเดียว</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Everything in BUILD Package</li>
+                        <li>Sales Channel Key Visuals</li>
+                        <li>Marketing Content Strategy</li>
+                        <li>Production-ready Print Die-lines</li>
+                        <li>Supplier Coordination</li>
+                    </ul>
+                    <button class="btn btn-blue btn-full">เลือกแพ็กเกจนี้</button>
+                </div>
+
+                <!-- Package 04 -->
+                <div class="pricing-card">
+                    <div class="pricing-number">04</div>
+                    <div class="pricing-header">
+                        <h3>PARTNER</h3>
+                        <p class="text-muted" style="font-size: 12px;">ทีมผู้เชี่ยวชาญดูแลต่อเนื่อง</p>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-amount">19,900 <span style="font-size: 14px;">THB</span></div>
+                        <div class="price-period">รายเดือน</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Dedicated Creative Team</li>
+                        <li>Ongoing Packaging Updates</li>
+                        <li>Monthly Campaign Artwork</li>
+                        <li>Strategic Brand Advisory</li>
+                        <li>Priority Project Queue</li>
+                    </ul>
+                    <button class="btn btn-gold-outline btn-full">เลือกแพ็กเกจนี้</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: CUSTOM PROJECT & FOOTER BANNER -->
+    <section>
+        <div class="container">
             <!-- Custom Project Banner -->
             <div class="custom-project-banner">
                 <div>
