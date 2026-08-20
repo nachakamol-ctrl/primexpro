@@ -23,3 +23,58 @@ section{scroll-margin-top:82px}
 .contact{border-top:1px solid rgba(199,145,54,.28)}
 @media(max-width:1050px){.hero-brand{transform:none}.hero-brand-tagline{font-size:8px}.brand img{width:188px}}
 @media(max-width:620px){.brand img{width:156px}.hero-brand-tagline{max-width:240px;line-height:1.6}}
+
+/* ===========================
+   v7 BUSINESS & SALES SYSTEM
+=========================== */
+.system,.product-market,.blueprint,.free-review,.project-intake{padding:88px 0;border-top:1px solid rgba(199,145,54,.25);background:linear-gradient(180deg,#02060b,#030911)}
+.system h2,.product-market h2,.blueprint h2,.free-review h2,.project-intake h2{font:600 clamp(36px,4.2vw,58px) Kanit;line-height:1.08;margin:10px 0 18px}
+.system h2,.product-market h2 span,.blueprint h2 span,.project-intake h2 span{color:#d3a14a}
+.system-quote{margin:42px 0;padding:28px 34px;border-left:2px solid #d3a14a;background:rgba(255,255,255,.018);font-size:clamp(22px,2.3vw,34px);line-height:1.45}
+.system-quote span{color:#d8a74f}
+.system-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.system-flow article,.pm-grid article{padding:22px;border:1px solid rgba(199,145,54,.27);background:rgba(255,255,255,.012)}
+.system-flow b,.pm-grid span{color:#d3a14a;font:600 11px Montserrat}
+.system-flow h3,.pm-grid h3{font:600 13px Montserrat;margin:24px 0 8px}
+.system-flow p,.pm-grid p{font-size:13px;color:#b9bec5}
+.market-line{margin-top:25px;padding:16px;text-align:center;border-top:1px solid rgba(199,145,54,.2);border-bottom:1px solid rgba(199,145,54,.2);font:600 10px Montserrat;letter-spacing:1px;color:#8e949c}
+.market-line i{color:#d3a14a;font-style:normal;margin:0 8px}
+.pm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
+.product-market{background:radial-gradient(circle at 70% 20%,rgba(199,145,54,.08),transparent 25%),#02060b}
+.blueprint-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}
+.blueprint-grid>div>p{color:#c1c6cc;font-size:17px}
+.blueprint-list{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:26px}
+.blueprint-list span{padding:10px;border:1px solid rgba(199,145,54,.2);font-size:12px;color:#d0d2d5}
+.blueprint-card{min-height:460px;border:1px solid rgba(199,145,54,.45);padding:38px;background:linear-gradient(145deg,#05080d,#0b1018);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.blueprint-card small,.blueprint-card b{font:600 9px Montserrat;letter-spacing:1.5px;color:#9e7a3e}
+.blueprint-card img{display:block;width:130px;margin:65px 0 25px}
+.blueprint-card h3{font:600 32px Montserrat;line-height:1.1}
+.blueprint-card p{color:#8d9299}.blueprint-rule{height:1px;background:#a77c36;margin:35px 0}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.pricing-grid article{position:relative;min-height:520px;padding:28px;border:1px solid rgba(199,145,54,.3);background:rgba(255,255,255,.012)}
+.pricing-grid .featured{border-color:#d3a14a;background:rgba(199,145,54,.045)}
+.pricing-grid label{position:absolute;right:0;top:0;padding:5px 10px;background:#d3a14a;color:#111;font:600 8px Montserrat}
+.pricing-grid small{font:600 10px Montserrat;color:#d3a14a}.pricing-grid h3{font:600 19px Montserrat}
+.price{font:600 28px Montserrat;color:#f1d28d;margin:20px 0}.price span{font:400 11px Kanit;color:#8f969f}
+.pricing-grid p,.pricing-grid li{font-size:13px;color:#bfc4ca}.pricing-grid ul{padding-left:18px}
+.pricing-grid article>a{position:absolute;bottom:25px;color:#e1ad50;text-decoration:none}
+.custom-project{display:grid;grid-template-columns:1.5fr .5fr;gap:35px;align-items:center;margin-top:24px;padding:30px;border:1px solid rgba(199,145,54,.42)}
+.custom-project h3{font:600 18px Montserrat}.custom-project p{color:#bcc1c7}
+.custom-price{text-align:right}.custom-price>span{display:block;font:600 9px Montserrat;color:#9e7a3e}.custom-price>b{display:block;font:600 30px Montserrat;margin:5px 0 15px;color:#e1b35e}
+.review-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}
+.review-grid p{color:#c1c5ca}.review-box{padding:30px;border:1px solid rgba(199,145,54,.4);display:grid;gap:12px}
+.review-box b{color:#e1ad50;font:600 14px Montserrat}.review-box span{font-size:14px;color:#c7cbd0}
+.intake-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.intake-copy>p{color:#c1c6cc}.journey{margin-top:30px;font:600 9px Montserrat;line-height:2;color:#858c95}.journey i{font-style:normal;color:#d3a14a;margin:0 6px}
+.intake-form{padding:32px;border:1px solid rgba(199,145,54,.35);background:rgba(255,255,255,.012)}
+.field{margin-bottom:17px}.field label{display:block;margin-bottom:6px;color:#d7d9dc;font-size:13px}
+.field input,.field textarea,.field select{width:100%;padding:13px 14px;border:1px solid rgba(199,145,54,.22);background:#050a11;color:#f1f1ef;font:300 14px Kanit;outline:none}
+.field textarea{min-height:88px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#d3a14a}
+.form-submit{width:100%;cursor:pointer;font-family:Kanit;border:0}.form-note{font-size:11px;color:#777f89;margin:12px 0 0}
+@media(max-width:1100px){.system-flow{grid-template-columns:repeat(3,1fr)}.pm-grid,.pricing-grid{grid-template-columns:repeat(2,1fr)}.blueprint-grid,.review-grid,.intake-grid{grid-template-columns:1fr}.custom-project{grid-template-columns:1fr}.custom-price{text-align:left}}
+@media(max-width:650px){.system,.product-market,.blueprint,.free-review,.project-intake{padding:58px 0}.system-flow,.pm-grid,.pricing-grid,.blueprint-list{grid-template-columns:1fr}.pricing-grid article{min-height:auto}.pricing-grid article>a{position:static;display:inline-block;margin-top:18px}.custom-project{padding:22px}.system-quote{padding:20px;margin:28px 0}.intake-form{padding:20px}}
+
+.form-success{padding:32px;border:1px solid rgba(199,145,54,.45);background:rgba(255,255,255,.015)}
+.form-success h3{color:#d8a74f;font:600 22px Montserrat}.form-success p{color:#c1c6cc}
+.form-success textarea{width:100%;min-height:220px;padding:15px;background:#050a11;color:#eee;border:1px solid rgba(199,145,54,.22);font:300 13px Kanit}
+.copy-brief{cursor:pointer;font-family:Kanit}

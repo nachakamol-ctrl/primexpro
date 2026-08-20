@@ -1,27 +1,23 @@
-# PRIMEX PRO Website v6 — Visual Profile & Advertising Edition
+# PRIMEX PRO Website v7 — Business & Sales System Edition
 
-เพิ่มจาก v5:
-- ABOUT section พร้อมภาพ creative studio
-- BRAND IDENTITY SHOWCASE พร้อมภาพ navy-gold stationery
-- คง Master Design black → deep navy gradient
-- โลโก้ PRIMEX PRO ใหม่
-- Services / Packages / ROOTERRA FARM / FAQ / CTA
+เพิ่มระบบ:
+- PRIMEX BUSINESS CREATIVE SYSTEM™
+- From Product to Market workflow
+- PRIMEX PROJECT BLUEPRINT™
+- Packages & Pricing: START / BUILD / LAUNCH / PARTNER
+- PRIMEX CUSTOM PROJECT™
+- Free Initial Project Review
+- START A PROJECT intake funnel
+- Project Brief generator + LINE handoff
 
-Upload/replace:
+สำคัญ:
+แบบฟอร์มในเวอร์ชัน Static GitHub Pages นี้ไม่ได้ส่งหรือเก็บข้อมูลลูกค้าไว้บนเซิร์ฟเวอร์
+เมื่อกด ANALYZE MY PROJECT เว็บไซต์จะสร้าง Project Brief บนเครื่องของลูกค้า
+จากนั้นลูกค้ากดคัดลอกและส่งผ่าน LINE ด้วยตนเอง
+
+อัปโหลดแทนไฟล์เดิม:
 - index.html
 - style.css
 - script.js
-- README.md
 
-Upload into real folder assets/:
-- primexpro-logo.png
-- navy-gradient.jpg
-- about-creative-studio.jpg
-- brand-identity-showcase.jpg
-
-## v6.1 Final Visual Polish
-- Header logo enlarged approximately 25%
-- Hero logo shifted slightly inward
-- Added subtle brand tagline under Hero logo
-- Refined section spacing, shadows and card hover states
-- Improved responsive sizing
+คงโฟลเดอร์ assets/ เดิมทั้งหมด
