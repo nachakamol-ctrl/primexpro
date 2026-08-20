@@ -10,3 +10,105 @@
 
 @media(max-width:1050px){.topbar nav,.start-project{display:none}.menu{display:block}.topbar nav.open{display:flex;position:absolute;top:82px;left:0;width:100%;background:#02060b;padding:25px;flex-direction:column}.hero-grid,.about-grid,.showcase-grid{grid-template-columns:1fr}.hero-brand img{width:220px}.service-grid{grid-template-columns:repeat(2,1fr)}.package-grid{grid-template-columns:1fr}.case-study{grid-template-columns:1fr}.case-mark{height:180px}.package-grid a,.case-study a{position:static;display:inline-block;margin-top:20px}.footer-inner{flex-direction:column;gap:12px}.brand img{width:150px}.about-media{order:2}.about-copy{order:1}}
 @media(max-width:620px){.hero{min-height:auto}.hero-grid{padding:60px 0}.hero h1{font-size:42px}.lead{font-size:16px}.hero-actions{flex-direction:column}.btn{text-align:center}.hero-brand{margin-top:10px}.hero-brand img{width:180px}.service-grid{grid-template-columns:1fr}.topbar{padding:0 20px}.brand img{width:125px}.services,.packages,.work,.faq,.about,.showcase{padding:58px 0}.about-media,.about-media img{min-height:300px}}
+/* =========================
+   SERVICES — PRIMEX PRO
+========================= */
+
+.services-section {
+  padding: 110px 8%;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(202,160,78,.08), transparent 30%),
+    #071526;
+}
+
+.section-heading {
+  margin-bottom: 55px;
+}
+
+.section-heading .eyebrow {
+  color: #d4aa55;
+  letter-spacing: .25em;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.section-heading h2 {
+  margin: 10px 0 0;
+  color: #d4aa55;
+  font-size: clamp(38px, 5vw, 70px);
+  line-height: 1;
+}
+
+.section-heading p {
+  margin-top: 10px;
+  color: #d8dee8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.service-card {
+  position: relative;
+  min-height: 310px;
+  padding: 35px 26px;
+  border: 1px solid rgba(212,170,85,.25);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.035),
+      rgba(255,255,255,.012)
+    );
+  transition: transform .3s ease, border-color .3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #d4aa55;
+}
+
+.service-no {
+  margin-bottom: 55px;
+  color: #d4aa55;
+  font-size: 13px;
+  letter-spacing: .18em;
+}
+
+.service-card h3 {
+  margin-bottom: 18px;
+  color: #f5f1e8;
+  font-size: 18px;
+  letter-spacing: .04em;
+}
+
+.service-card p {
+  color: #aeb9c8;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .services-section {
+    padding: 75px 22px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .service-no {
+    margin-bottom: 30px;
+  }
+}
