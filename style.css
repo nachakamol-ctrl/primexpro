@@ -199,3 +199,246 @@ section{scroll-margin-top:82px}
 }
 @media(max-width:1180px){.impact-grid{grid-template-columns:1fr}.impact-image{height:260px}.impact-flow{overflow-x:auto;padding-bottom:6px}.master-case-grid{grid-template-columns:1fr}.ba-grid{height:340px}.blueprint-review-grid{grid-template-columns:1fr}.master-price-grid{grid-template-columns:repeat(2,1fr)}.master-custom{grid-template-columns:150px 1fr}.custom-flow{grid-column:1/-1;justify-content:center}.master-wrap{width:min(960px,92%)}}
 @media(max-width:650px){.master-impact{padding-top:82px}.impact-copy h1{font-size:36px}.impact-th{font-size:15px}.impact-flow>div{min-width:82px}.master-case-grid,.master-price-grid{grid-template-columns:1fr}.ba-grid{height:300px}.bp-panel{grid-template-columns:1fr}.bp-book{min-height:270px}.book-pages div{width:100px;height:150px}.book-cover{width:135px;height:175px}.master-custom{grid-template-columns:1fr}.custom-visual{height:150px}.custom-flow{justify-content:flex-start}.master-wrap{width:92%}}
+
+
+/* =========================================================
+   v12 FINAL DESKTOP SCALE
+   Fixes: Desktop 100% text too small + Before/After hierarchy
+   ========================================================= */
+
+@media (min-width:1181px){
+  /* Header — readable like the approved master */
+  .topbar{
+    height:88px;
+    padding:0 2.6%;
+    gap:26px;
+    background:rgba(0,4,9,.96);
+  }
+  .master-brand{
+    width:310px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+  }
+  .master-brand img{
+    width:62px!important;
+    height:62px;
+    max-height:62px!important;
+    object-fit:cover;
+    object-position:center;
+  }
+  .master-brand span{display:flex;flex-direction:column;line-height:1}
+  .master-brand b{
+    font:700 24px Montserrat;
+    color:#f4f0e8;
+    letter-spacing:.2px;
+  }
+  .master-brand small{
+    margin-top:5px;
+    font:600 7px Montserrat;
+    letter-spacing:1.15px;
+    color:#c89b49;
+  }
+  .topbar nav{gap:31px}
+  .topbar nav a,.start-project{font-size:11px}
+  .start-project{padding:13px 21px}
+
+  /* Width: larger readable canvas without becoming vertically long */
+  .master-wrap{width:min(1640px,94.5%)}
+
+  /* HERO / PRODUCT TO MARKET */
+  .master-impact{
+    padding-top:88px;
+    min-height:510px;
+  }
+  .impact-grid{
+    grid-template-columns:1.08fr .92fr;
+    min-height:420px;
+  }
+  .impact-copy{
+    padding:54px 38px 34px 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .master-kicker{
+    font-size:11px;
+    letter-spacing:2.5px;
+    margin-bottom:12px;
+  }
+  .impact-copy h1{
+    font-size:clamp(56px,3.7vw,76px);
+    line-height:.96;
+    letter-spacing:-1.5px;
+  }
+  .impact-th{
+    font-size:22px;
+    margin:17px 0 27px;
+  }
+  .impact-image{min-height:420px}
+  .impact-flow{
+    max-width:1050px;
+    gap:12px;
+  }
+  .impact-flow>div{width:112px}
+  .impact-flow i{
+    width:52px;height:52px;
+    font-size:22px;
+    margin-bottom:7px;
+  }
+  .impact-flow>div b{font-size:8px}
+  .impact-flow strong{font-size:9px}
+  .impact-flow span{font-size:12px}
+  .impact-flow em{font-size:23px}
+
+  /* OUR WORK */
+  .master-work{padding:18px 0 28px}
+  .master-heading{margin-bottom:16px}
+  .master-heading h2{font-size:28px}
+  .master-heading p{font-size:14px}
+  .master-case-grid{gap:19px}
+  .master-case{border-radius:13px}
+  .master-case header{
+    padding:10px 10px 9px;
+    font-size:10px;
+  }
+  .master-case header b{font-size:11px}
+  .ba-grid{height:355px}
+  .ba-panel>span{
+    top:13px;left:14px;
+    font-size:11px;
+    background:rgba(247,241,229,.84);
+    padding:4px 7px;
+    border-radius:2px;
+  }
+  .ba-panel>small{
+    top:44px;left:14px;
+    font-size:12px;
+    background:rgba(247,241,229,.82);
+    padding:2px 6px;
+  }
+  .ba-panel img{object-position:center}
+  .root-before{
+    transform:scale(1.08);
+    object-position:center;
+    filter:saturate(.78) contrast(.96) brightness(.96);
+  }
+  .master-case-body{
+    padding:15px 15px 12px;
+    min-height:132px;
+  }
+  .master-case-body h3{font-size:26px}
+  .master-case-body p{font-size:13px;margin:3px 0 12px}
+  .mini-cap span{font-size:8px;padding-top:8px}
+  .concept-label{font-size:7px;margin-top:6px}
+
+  /* AFTER visual label makes the concept read like the approved reference */
+  .after-panel:after{
+    content:"";
+    position:absolute;inset:auto 0 0 0;height:30%;
+    background:linear-gradient(transparent,rgba(0,0,0,.58));
+    pointer-events:none;
+  }
+  .after-brand{
+    position:absolute;
+    z-index:4;
+    left:50%;
+    bottom:18px;
+    transform:translateX(-50%);
+    white-space:nowrap;
+    color:#e2b15b;
+    font:600 20px Georgia;
+    letter-spacing:1.4px;
+    text-shadow:0 2px 10px #000;
+  }
+  .after-brand em{
+    display:block;
+    font:600 8px Montserrat;
+    letter-spacing:2px;
+    text-align:center;
+    color:#f3e4c7;
+    margin-top:2px;
+  }
+
+  /* Blueprint — increase readability, preserve compact 70/30 layout */
+  .master-blueprint{padding:16px 0}
+  .blueprint-review-grid{grid-template-columns:2.35fr .75fr;gap:15px}
+  .bp-panel,.review-panel{min-height:345px}
+  .bp-copy{padding:24px 25px 18px}
+  .bp-copy h2,.review-panel h2{font-size:23px}
+  .bp-copy>p,.review-panel p{font-size:14px}
+  .bp-copy ol{gap:6px}
+  .bp-copy li{grid-template-columns:34px 1fr}
+  .bp-copy li>b{width:29px;height:29px;font-size:9px}
+  .bp-copy li span{font-size:10px}
+  .bp-copy li small{font-size:10px}
+  .book-cover{width:215px;height:275px}
+  .book-cover img{width:72px;margin-bottom:24px}
+  .book-cover b{font-size:16px}
+  .book-cover small{font-size:8px}
+  .book-pages div{width:175px;height:250px}
+  .book-pages div:after{font-size:9px;line-height:3.25}
+  .review-panel{padding:25px 23px}
+  .review-item{grid-template-columns:39px 1fr;gap:10px;margin:8px 0}
+  .review-item i{width:34px;height:34px}
+  .review-item b{font-size:11px}
+  .review-item small{font-size:10px}
+  .review-panel>a{padding:11px;font-size:12px}
+
+  /* Packages — 4 across, but readable at browser zoom 100% */
+  .master-packages{padding:13px 0 23px}
+  .master-price-grid{gap:11px}
+  .master-price-grid article{
+    min-height:340px;
+    padding:18px 20px 54px;
+    border-radius:10px;
+  }
+  .master-price-grid h3{font-size:21px}
+  .master-price-grid article>b{font-size:13px}
+  .master-price-grid article>small{font-size:10px;margin-bottom:9px}
+  .master-price-grid ul{
+    margin:9px 0 10px;
+    padding-left:20px;
+    font-size:10px;
+    line-height:1.55;
+  }
+  .master-price-grid strong{font-size:25px}
+  .master-price-grid strong small{font-size:10px}
+  .master-price-grid article>p{font-size:9px}
+  .master-price-grid article>a{
+    left:9px;right:9px;bottom:9px;
+    padding:10px;
+    font-size:11px;
+  }
+  .master-custom{
+    grid-template-columns:235px 1.05fr 1.55fr;
+    gap:20px;
+    min-height:122px;
+    padding:12px;
+    margin-top:12px;
+  }
+  .custom-visual{height:98px}
+  .master-custom h3{font-size:21px}
+  .master-custom p{font-size:13px}
+  .master-custom small{font-size:9px}
+  .master-custom b{font-size:10px}
+  .master-custom b strong{font-size:22px}
+  .master-custom a{padding:8px 15px;font-size:10px}
+  .custom-flow{gap:11px}
+  .custom-flow span{font-size:9px;max-width:94px}
+}
+
+/* Medium desktop / laptop: still clearly readable */
+@media (min-width:1181px) and (max-width:1500px){
+  .master-brand{width:245px}
+  .master-brand b{font-size:20px}
+  .topbar nav{gap:20px}
+  .topbar nav a,.start-project{font-size:10px}
+  .impact-copy h1{font-size:56px}
+  .impact-flow>div{width:96px}
+  .ba-grid{height:315px}
+  .master-case-body h3{font-size:23px}
+  .master-price-grid article{min-height:325px;padding-left:15px;padding-right:15px}
+  .master-price-grid ul{font-size:9.5px}
+}
