@@ -141,3 +141,31 @@ section{scroll-margin-top:82px}
 .industry-grid p{font-size:13px;color:#b9bec5}
 @media(max-width:1000px){.reference-grid{grid-template-columns:repeat(2,1fr)}.reference-note-box{grid-template-columns:1fr}.industry-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.reference-library,.industry-fit{padding:58px 0}.reference-grid,.industry-grid{grid-template-columns:1fr}.reference-card,.reference-card img{min-height:300px}.reference-note-box{padding:22px}}
+
+/* ===========================
+   v10 TRUST & CONVERSION
+=========================== */
+.why-primex,.engagement,.deliverables,.payment-terms,.confidence-cta{padding:88px 0;border-top:1px solid rgba(199,145,54,.25)}
+.why-primex{background:linear-gradient(180deg,#02060b,#030911)}
+.why-primex .section-head h2 span,.engagement .section-head h2 span,.deliverables h2 span,.payment-terms .section-head h2 span{color:#d3a14a}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.why-grid article{padding:26px;border:1px solid rgba(199,145,54,.26);background:rgba(255,255,255,.012)}
+.why-grid b{font:600 10px Montserrat;color:#d3a14a}.why-grid h3{font:600 14px Montserrat;margin:20px 0 8px}.why-grid p{font-size:13px;color:#bbc0c6}
+.engagement{background:#02060b}.engagement-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.engagement-flow article{padding:22px;border-top:1px solid rgba(199,145,54,.45);background:linear-gradient(180deg,rgba(255,255,255,.018),transparent)}
+.engagement-flow span{font:600 8px Montserrat;color:#d3a14a}.engagement-flow h3{font:600 12px Montserrat;margin:22px 0 7px}.engagement-flow p{font-size:12px;color:#aeb4bb}
+.deliverables{background:#030911}.deliver-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}
+.deliver-grid>div:first-child>p{color:#c1c6cc}.deliver-list{border-top:1px solid rgba(199,145,54,.22)}
+.deliver-list div{display:grid;grid-template-columns:50px 1fr;gap:14px;padding:17px 0;border-bottom:1px solid rgba(199,145,54,.16)}
+.deliver-list b{font:600 9px Montserrat;color:#d3a14a}.deliver-list span{color:#d3d6da}
+.payment-terms{background:#02060b}.term-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.term-grid article{padding:27px;border:1px solid rgba(199,145,54,.26);background:rgba(255,255,255,.012)}
+.term-grid article.featured{border-color:#d3a14a;background:rgba(199,145,54,.04)}
+.term-grid small{font:600 9px Montserrat;color:#d3a14a}.term-grid h3{font:600 21px Montserrat;margin:15px 0}.term-grid p{font-size:13px;color:#b9bec5}
+.terms-note{margin-top:20px;font-size:11px;color:#7e858e}
+.confidence-cta{background:radial-gradient(circle at 75% 50%,rgba(199,145,54,.09),transparent 30%),#030911}
+.confidence-grid{display:grid;grid-template-columns:1fr auto;gap:45px;align-items:center}
+.confidence-grid h2{font:600 clamp(32px,3.5vw,48px) Kanit;margin:8px 0}.confidence-grid p{color:#bbc0c6;max-width:760px}
+.mobile-sticky-cta{display:none}
+@media(max-width:1100px){.why-grid,.term-grid{grid-template-columns:repeat(2,1fr)}.engagement-flow{grid-template-columns:repeat(3,1fr)}.deliver-grid{grid-template-columns:1fr}.confidence-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.why-primex,.engagement,.deliverables,.payment-terms,.confidence-cta{padding:58px 0}.why-grid,.term-grid,.engagement-flow{grid-template-columns:1fr}.mobile-sticky-cta{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:80;text-align:center;text-decoration:none;padding:13px 18px;background:linear-gradient(135deg,#d7a850,#b67b27);color:#080808;font:600 12px Montserrat;box-shadow:0 14px 40px rgba(0,0,0,.42)}body{padding-bottom:70px}}
