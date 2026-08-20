@@ -18,3 +18,10 @@ Upload into real folder assets/:
 - navy-gradient.jpg
 - about-creative-studio.jpg
 - brand-identity-showcase.jpg
+
+## v6.1 Final Visual Polish
+- Header logo enlarged approximately 25%
+- Hero logo shifted slightly inward
+- Added subtle brand tagline under Hero logo
+- Refined section spacing, shadows and card hover states
+- Improved responsive sizing
